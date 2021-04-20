@@ -5,18 +5,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Exercise 7</title>
+    <link rel="stylesheet" type="text/css" href="./D7.css">
   </head>
 
   <body>
 
+    <div class="click">
+        <button type="button" onclick="changeTitle('Something Else')">Change Title</button>
+        <button type="button" onclick="addClassToTitle()">Title color change</button>
+        <button type="button" onclick="changePcontent()">Change Content of Div p</button>
+        <button type="button" onclick="changeUrls()">URL change</button>
+        <button type="button" onclick="addToTheSecond('hiiiii')">add to second list</button>
+        <button type="button" onclick="addParagraph('This is second p of div')">Second Paragraph</button>
+        <button type="button" onclick="firstUlDisappear()">Second UL disapper</button>
+        <button type="button" onclick="paintItGreen()">Paint ul green</button>       
+    </div>
+
     <header>
-      <h1>This is the title of the page</h1>
+      <h1 id="mainTitle" >This is the title of the page</h1>
       <h2>This is the subtitle of the page</h2>
     </header>
 
     <main>
-        
+
       <hr />
 
       <ul id="firstList">
@@ -31,7 +43,7 @@
         <li>3rd</li>
       </ul>
 
-      <a href="strive.school">This link goes to Strive School</a>
+      <a href="strive.school" target="_blank">This link goes to Strive School</a>
 
       <div>
         <p>This text is just for the exercise</p>
@@ -47,7 +59,9 @@
     </main>
 
     <footer>
-      <p>And this text is just for the exercise too!</p>
+      <p id="foot">And this text is just for the exercise too!</p>
     </footer>
+
+    <script src="D7.js"></script>
   </body>
 </html>
