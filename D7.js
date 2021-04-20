@@ -135,18 +135,13 @@
       /* EXERCISE 11
       Attach an event listener to the input field in the page for console logging its value just after any keystroke.
       */
-
-      const userInput = function(){
-          console.log(event);
+ 
         const inputField = document.getElementById("input-field");
-        let inputFieldvalue = inputField.value
-      }
-      
-      
-      
-    
-      
-
+        // let e = inputField.value
+        inputField.addEventListener('mouseenter', function(e)
+        {
+            console.log(inputField.value);
+        } )
       // ...
 
       /* EXERCISE 12
