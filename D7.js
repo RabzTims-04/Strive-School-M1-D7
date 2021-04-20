@@ -133,10 +133,9 @@
       */
  
         const inputField = document.getElementById("input-field");
-        // let e = inputField.value
-        inputField.addEventListener('input', function(e)
+               inputField.addEventListener('input', function(e)
         {
-            console.log(inputField.value);
+            console.log(e.target.value);
         } )
       // ...
 
