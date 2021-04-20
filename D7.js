@@ -109,10 +109,6 @@
       Make the heading of the page change color every time the user clicks on it.
       */
 
-    //   const colorChange = function(){
-    //     makeItClickable()
-        
-    //   }
 
       let headingClick = document.getElementById('mainTitle')            
       const makeItClickable = function () {        
@@ -138,7 +134,7 @@
  
         const inputField = document.getElementById("input-field");
         // let e = inputField.value
-        inputField.addEventListener('mouseenter', function(e)
+        inputField.addEventListener('input', function(e)
         {
             console.log(inputField.value);
         } )
